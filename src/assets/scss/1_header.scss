@@ -1,0 +1,97 @@
+.header {
+}
+.header__title {
+    background-color: $backgroundColor;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+}
+.header__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.header__left {
+    display: flex;
+    gap: 10px;
+}
+.header__left-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header__left-left-imgWrapper {
+    max-width: 100%;
+}
+.header__left-left-img {
+    width: 100%;
+}
+.header__left-right {
+    max-width: 100%;
+}
+.header__left-right-img {
+    width: 100%;
+}
+.header__right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.header__right-text {
+    text-align: center;
+    font-size: 20px;
+}
+.header__right-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.header__right-btn-wrapper {
+}
+.header__right-btnWhatsapp {
+    background-color: $btnColorWhatsapp;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover {
+        color: #fff;
+        background-color: #2c943c;
+    }
+}
+.header__right-btnTel{
+    background-color: $backgroundColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 15px;
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: .3s;
+    position: relative;
+    &:hover {
+        color: #fff;
+        background-color: #056980;
+    }
+    span::before{
+        content: '';
+        position: absolute;
+        background-image: url(../icons/telephone-fill.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
