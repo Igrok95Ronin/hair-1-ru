@@ -1,0 +1,93 @@
+.professor {
+    padding: 50px 0 0;
+}
+.professor__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.professor__left {
+    position: relative;
+}
+.professor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.professor__info {
+    background-color: $backgroundColor;
+    color: #fff;
+    padding: 5px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+}
+.professor__dol {
+}
+.professor__name {
+    font-weight: 700;
+    margin-top: 10px;
+}
+.professor__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.professor__title {
+    @include h2Title;
+    background-color: $backgroundColor;
+    color: #fff;
+}
+.professor__txt {
+    line-height: 20px;
+    padding: 5px;
+}
+.professor__ul {
+    font-weight: 700;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    li{
+        position: relative;
+    }
+    li::before{
+        content: '';
+        position: absolute;
+        background-image: url("../img/markerGreen.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.professor__btnWhatsAppWrapper {
+    padding: 5px;
+}
+.professor__bntWhatsApp {
+    background-color: #25d366;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px 20px 15px 50px;
+    transition: .3s;
+    position: relative;
+    &:hover {
+        color: #dcd9d9;
+    }
+    span::before{
+        content: '';
+        position: absolute;
+        background-image: url('../icons/WhatsApp.svg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
