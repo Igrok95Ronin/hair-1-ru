@@ -1,0 +1,48 @@
+.doPosle {
+    padding: 50px 0 0;
+}
+.doPosle__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.doPosle__left {
+}
+.doPosle__title {
+    @include h2Title;
+}
+.doPosle__wrapper {
+    display: flex;
+    gap: 10px;
+}
+.doPosle__inner {
+}
+.doPosle__imgWrapper {
+    max-width: 100%;
+}
+.doPosle__img {
+    width: 100%;
+}
+.doPosle__doPosle {
+    background-color: $backgroundColor;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.doPosle__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.doPosle__text {
+    font-size: 20px;
+}
+.doPosle__imgResultWrapper {
+    max-width: 100%;
+}
+.doPosle__imgResult {
+    width: 100%;
+}

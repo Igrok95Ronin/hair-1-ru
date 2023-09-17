@@ -48,3 +48,10 @@ $btnColorWhatsapp : #38b44a;
 @mixin btn {
 
 }
+@mixin h2Title {
+    color: $backgroundColor;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
